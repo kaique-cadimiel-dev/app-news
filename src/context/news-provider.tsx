@@ -3,7 +3,7 @@ import { NewsContext } from "./news-context";
 function NewsProvider({ children }: { children: React.ReactNode }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [rememberme, setRememberme] = useState(false);
+  const [rememberme, setRememberme] = useState(true);
   return (
     <NewsContext.Provider value={{ username, password, rememberme, setUsername, setPassword, setRememberme }}>
       {children}
