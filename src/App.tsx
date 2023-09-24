@@ -1,6 +1,18 @@
+import { Route, Routes } from "react-router-dom";
+import Login from '../src/pages/login/Login.tsx';
+import ForgotPassword from '../src/pages/forgotpassword/Forgotpassword.tsx';
+import SignUp from '../src/pages/signup/Signup.tsx';
+import Verification from '../src/pages/verification/Verification.tsx';
+import SelectCountry from '../src/pages/selectcountry/SelectCountry.tsx';
 function App() {
   return (
-    <h1>App News</h1>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/forgotpassword" element={<ForgotPassword />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/verification" element={<Verification />} />
+      <Route path="/selectcountry" element={<SelectCountry />} />
+    </Routes>
   )
 }
 
