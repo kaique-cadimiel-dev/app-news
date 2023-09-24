@@ -1,4 +1,14 @@
+import { useContext } from "react";
+import { NewsContext } from "../../context/news-context";
+
 function Login() {
+    const {
+        password,
+        rememberme,
+        username,
+        setPassword,
+        setRememberme,
+        setUsername } = useContext(NewsContext)
     return (
         <>
             <h1>Hello Again!</h1>
