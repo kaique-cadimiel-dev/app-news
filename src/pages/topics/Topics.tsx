@@ -34,7 +34,7 @@ function Topics() {
                     )
                 })
             }
-            <a href="?">Next</a>
+            <a href="/profileadd">Next</a>
         </>
     )
 }

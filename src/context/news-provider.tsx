@@ -12,6 +12,10 @@ function NewsProvider({ children }: { children: React.ReactNode }) {
   const [countryFiltered, setCountryFiltered] = useState(listCountry);
   const [topics, setTopics] = useState(listTopcs);
   const [topicsFiltered, setTopicsFiltered] = useState(listTopcs);
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [image, setImage] = useState('');
 
 
   return (
@@ -25,6 +29,14 @@ function NewsProvider({ children }: { children: React.ReactNode }) {
       topics,
       topicsFiltered,
       topcsInput,
+      email,
+      fullName,
+      phone,
+      image,
+      setImage,
+      setEmail,
+      setFullName,
+      setPhone,
       setTopcsInput,
       setCountryFiltered,
       setCountryInput,
