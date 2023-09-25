@@ -5,6 +5,8 @@ import SignUp from '../src/pages/signup/Signup.tsx';
 import Verification from '../src/pages/verification/Verification.tsx';
 import SelectCountry from '../src/pages/selectcountry/SelectCountry.tsx';
 import Topics from '../src/pages/topics/Topics.tsx';
+import ProfileAdd from './pages/profile/ProfileAdd.tsx';
+import HomePage from '../src/pages/homepage/Homepage.tsx';
 function App() {
   return (
     <Routes>
@@ -14,6 +16,8 @@ function App() {
       <Route path="/verification" element={<Verification />} />
       <Route path="/selectcountry" element={<SelectCountry />} />
       <Route path="/topics" element={<Topics />} />
+      <Route path="/profile" element={<ProfileAdd />} />
+      <Route path="/homepage" element={<HomePage />} />
     </Routes>
   )
 }
