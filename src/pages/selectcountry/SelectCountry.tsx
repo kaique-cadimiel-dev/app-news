@@ -35,9 +35,9 @@ function SelectCountry() {
             {
                 countryFiltered.map((country, i) => {
                     return (
-                        <label htmlFor="country" key={`${country}${i}`}>
+                        <label htmlFor={`${country}${i}`} key={`${country}${i}`}>
                             <input
-                                id="country"
+                                id={`${country}${i}`}
                                 type="radio"
                                 name="country"
                                 value={`${country}${i}`}
@@ -53,7 +53,7 @@ function SelectCountry() {
                     )
                 })
             }
-            <button>Next</button>
+            <a href="/topics">Next</a>
         </>
     )
 }
